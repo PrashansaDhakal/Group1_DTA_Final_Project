@@ -4,8 +4,10 @@
 
 # Contributors
 
-Fakhruddin Shaik
-Mary Mungai
+Fakhruddin Shaik,
+
+Mary Mungai,
+
 Prashansa Dhakal
 
 
