@@ -28,10 +28,10 @@ This repository serves as the foundation for learning and managing data lifecycl
   - `dbt_project.yml`: DBT project configuration
 
 - `superset/`: Superset configuration
-│ - `superset_config.py`: Example configuration file
+  - `superset_config.py`: Example configuration file
 
 - minio-config/`: Configuration for MinIO
-│ - `config.json`: MinIO example configuration
+  - `config.json`: MinIO example configuration
 
 - `iceberg-tables/`: Definitions for Iceberg tables.
   - `create_tables.sql`: SQL scripts for creating tables
