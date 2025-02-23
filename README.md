@@ -1,7 +1,16 @@
 # Group1_DTA_Final_Project
 
 # DataTech Admin Final Capstone
- 
+
+#Contributors
+Fakhruddin Shaik
+Mary Mungai
+Prashansa Dhakal
+
+#Project Description
+
+ No project instructions have been given, hence, the group has not decided on a project idea yet.
+
 
 ## Purpose
 
