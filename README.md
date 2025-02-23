@@ -2,12 +2,14 @@
 
 # DataTech Admin Final Capstone
 
-#Contributors
+# Contributors
+
 Fakhruddin Shaik
 Mary Mungai
 Prashansa Dhakal
 
-#Project Description
+
+# Project Description
 
  No project instructions have been given, hence, the group has not decided on a project idea yet.
 
