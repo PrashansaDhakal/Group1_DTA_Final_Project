@@ -13,7 +13,7 @@ Prashansa Dhakal
 
 # Project Description
 
- No project instructions have been given, hence, the group has not decided on a project idea yet.
+This project aims to deploy a fully operational data pipeline with Airflow, Superset, MinIO, Docker, and Postgres.
 
 
 ## Purpose
@@ -53,3 +53,14 @@ This repository serves as the foundation for learning and managing data lifecycl
   - `ingest_data.py`:Example data ingestion script
 
 - `docker.compose.yml`: Docker Compose to manage services 
+
+## To-Do
+1. Edit yelp_tips_etl_dag.py file
+2. Load 
+
+## In Progress
+1.
+
+## Testing
+
+## Completed
