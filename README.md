@@ -6,8 +6,6 @@
 
 Fakhruddin Shaik,
 
-Mary Mungai,
-
 Prashansa Dhakal
 
 
