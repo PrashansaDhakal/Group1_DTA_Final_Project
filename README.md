@@ -62,3 +62,6 @@ This repository serves as the foundation for learning and managing data lifecycl
 ## Testing
 
 ## Completed
+1. Updated devcontainer.json file
+2. Created compiled_dag.py file, added pgadmin, and edited credentials
+3. Updated the docker-compose.yml file
