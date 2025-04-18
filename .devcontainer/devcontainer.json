@@ -1,0 +1,28 @@
+{
+    "name": "Airflow ETL DevContainer",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11", 
+  
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:1": {},
+      "ghcr.io/devcontainers/features/postgresql:1": {
+        "version": "14"
+      }
+    },
+  
+    "postCreateCommand": "pip install apache-airflow pandas pdfplumber",
+  
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.vscode-pylance",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
+    },
+  
+    "forwardPorts": [8080, 5432],
+  
+    "remoteUser": "vscode"
+  }
+  
