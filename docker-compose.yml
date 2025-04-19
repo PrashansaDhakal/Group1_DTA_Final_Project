@@ -28,10 +28,11 @@ services:
   
   # Airflow webserver service
   webserver:
-    image: apache/airflow:2.4.3  # Use the official Apache Airflow image version 2.4.3
+    build: .
+    image: custom_airflow:latest # Use the official Apache Airflow image version 2.4.3
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor  # Use LocalExecutor for Airflow
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow  # Database connection string
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:letmeinplease@postgres/airflow  # Database connection string
       #AIRFLOW__CORE__FERNET_KEY: 'OExH4KfzQbFU9f2DltIorH3jDP6bHCjSIOXcjssHImM='  # Optional: Fernet key for encryption
       AIRFLOW__CORE__LOAD_EXAMPLES: 'true'  # Load example DAGs
       AIRFLOW__WEBSERVER__RBAC: 'true'  # Enable Role-Based Access Control (RBAC)
@@ -48,10 +49,11 @@ services:
 
   # Airflow scheduler service
   scheduler:
-    image: apache/airflow:2.4.3  # Use the official Apache Airflow image version 2.4.3
+    build: .
+    image: custom_airflow:latest  # Use the official Apache Airflow image version 2.4.3
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor  # Use LocalExecutor for Airflow
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow  # Database connection string
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:letmeinplease@postgres/airflow  # Database connection string
       #AIRFLOW__CORE__FERNET_KEY: 'OExH4KfzQbFU9f2DltIorH3jDP6bHCjSIOXcjssHImM='  # Optional: Fernet key for encryption
       AIRFLOW__CORE__LOAD_EXAMPLES: 'true'  # Load example DAGs
     volumes:
@@ -65,10 +67,11 @@ services:
 
   # Airflow initialization service
   airflow-init:
-    image: apache/airflow:2.4.3  # Use the official Apache Airflow image version 2.4.3
+    build: .
+    image: custom_airflow:latest  # Use the official Apache Airflow image version 2.4.3
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor  # Use LocalExecutor for Airflow
-      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow  # Database connection string
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:letmeinplease@postgres/airflow  # Database connection string
       #AIRFLOW__CORE__FERNET_KEY: 'OExH4KfzQbFU9f2DltIorH3jDP6bHCjSIOXcjssHImM='  # Optional: Fernet key for encryption
       AIRFLOW__CORE__LOAD_EXAMPLES: 'true'  # Load example DAGs
     volumes:
@@ -82,4 +85,5 @@ services:
       /bin/bash -c "sleep 10 && airflow db init && airflow users create --username admin1 --firstname Prashansa --lastname Dhakal --role Admin --email dhakalpa@mail.uc.edu --password letmeinplease"  # Initialize the Airflow database and create a new user
 
 volumes:
-  postgres-db-volume:  # Define a named volume for PostgreSQL data
+  postgres-db-volume: {} # Define a named volume for PostgreSQL data
+  pgadmin-data: {}

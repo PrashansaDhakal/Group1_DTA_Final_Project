@@ -54,7 +54,12 @@ PDF_FILE = "/opt/airflow/data/BBKBLK Limited Financial Report.pdf"
 def extract_csv():
     if not os.path.exists(CSV_FILE):
         raise FileNotFoundError(f"CSV file not found: {CSV_FILE}")
-    df = pd.read_csv(CSV_FILE,encoding='ISO-8859-1')
+    df = pd.read_csv(CSV_FILE,encoding='utf-8-sig')
+    # Clean up header names
+    df.columns = df.columns.str.strip()
+
+    print("DEBUG HEADERS:", df.columns.tolist())
+    print("DEBUG FIRST ROW:", df.iloc[0].to_dict())
     return df.to_dict(orient="records")
 
 # Define a function to load and extract JSON File
