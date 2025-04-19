@@ -1,5 +1,3 @@
-# Let's create a markdown file with both classifications
-classification_content = """
 # Data Classification
 
 ## E-Commerce Dataset
@@ -15,7 +13,7 @@ classification_content = """
 | `CustomerID`      | E-Commerce    | Confidential (PII)     | Should be encrypted in storage, personal identifier for the customer |
 | `Country`         | E-Commerce    | Public                 | No protection needed, although some countries might have specific data protection laws |
 
-## Business Dataset
+## Yelp Academic Dataset
 
 | **Column Name**    | **Dataset**       | **Classification**     | **Note**                                              |
 |--------------------|-------------------|------------------------|------------------------------------------------------|
@@ -44,7 +42,7 @@ classification_content = """
 - **Where will archived data be stored?**
   - Archived data will be stored in secure, encrypted cloud storage (e.g., AWS S3) or encrypted external hard drives
 
-## Business Dataset
+## Yelp Academic Dataset
 
 - **How long will you keep raw, processed, or sensitive data?**
   - Raw data: 30 days
@@ -70,7 +68,7 @@ classification_content = """
   - Changes will be tracked via version control (e.g., Git) and logged using tools like Airflow.
   - Logs will be reviewed periodically for compliance.
 
-## Business Dataset
+## Yelp Academic Dataset
 
 - **Data Access:**
   - Access to sensitive columns like `Address` and `Postal Code` will be monitored using audit logs.
