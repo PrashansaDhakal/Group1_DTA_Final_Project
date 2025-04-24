@@ -19,13 +19,11 @@ This project aims to deploy a fully operational data pipeline with Airflow, Supe
 This repository serves as the foundation for learning and managing data lifecycle processes.
 
 
-## Final Project Presentation
-[IT4065C Final Project](https://www.canva.com/design/DAGlgKtYNKM/JsJlHjY1AlXKBGInLaCMFQ/view?utm_content=DAGlgKtYNKM&utm_campaign=designshare&utm_medium=embeds&utm_source=link)
+## Final Project Presentation & Walkthrough Recording
+[IT4065C Final Project Presentation](https://www.canva.com/design/DAGlgKtYNKM/JsJlHjY1AlXKBGInLaCMFQ/view?utm_content=DAGlgKtYNKM&utm_campaign=designshare&utm_medium=embeds&utm_source=link)
 
-<video width="320" height="240" controls>
-  <source src="data/Demo_Recording.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+[Watch the Recorded Walkthrough Video](data/Demo_Recording.mp4)
 
 
 
