@@ -22,6 +22,8 @@ This repository serves as the foundation for learning and managing data lifecycl
 ## Final Project Presentation
 [IT4065C Final Project](https://www.canva.com/design/DAGlgKtYNKM/JsJlHjY1AlXKBGInLaCMFQ/view?utm_content=DAGlgKtYNKM&utm_campaign=designshare&utm_medium=embeds&utm_source=link)
 
+<a href="https://www.canva.com/design/DAGlgKtYNKM/JsJlHjY1AlXKBGInLaCMFQ/view?utm_content=DAGlgKtYNKM&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener noreferrer">IT4065C Final Project Presentation</a>
+
 
 ## Directory Structure
 
